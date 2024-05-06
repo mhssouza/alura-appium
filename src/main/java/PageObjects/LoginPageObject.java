@@ -54,8 +54,11 @@ public class LoginPageObject extends PageObjectBase{
         return new LoginPageObject(driver);
     }
 
-    public CadastroPageObject irParaTelaCadastro() {
+    public void irParaTelaCadastro(){
         botaoCadastro.click();
+    }
+
+    public CadastroPageObject telaCadastro() {
         return new CadastroPageObject(driver);
     }
 
